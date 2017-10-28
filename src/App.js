@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @flow
+
+import React, { Component } from 'react'
+
+import logo from './logo.svg'
+import './App.css'
+
+import BehanceItem from './components/BehanceItem'
 
 class App extends Component {
   render() {
@@ -13,9 +18,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <BehanceItem/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
