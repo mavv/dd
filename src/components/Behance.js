@@ -1,4 +1,4 @@
-// @flow
+// @flow weak
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -23,8 +23,10 @@ const styles = theme => ({
   },
 })
 
-class Behance extends Component {
-  render() {
+
+function Behance(props) {
+  const { classes } = props;
+  // render() {
     return (
       <div className={classes.container}>
       <GridList cellHeight={180} className={classes.gridList}>
@@ -48,7 +50,7 @@ class Behance extends Component {
       </GridList>
     </div>
     )
-  }
+  // }
 }
 
 Behance.propTypes = {
